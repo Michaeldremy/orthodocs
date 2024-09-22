@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Annotated Letter to the Romans'
-sidebar_position: 2
+sidebar_label: 'Letter to the Romans'
+sidebar_position: 8
 ---
 
-# Annotated Letter to the Romans
+# Letter to the Romans
 
 ### Chapter I: As a Prisoner, I Hope to See You
 
