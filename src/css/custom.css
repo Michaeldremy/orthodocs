@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.flex {
+  display: flex;
+}
+
+.flexCenterAligned {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexStacked {
+  display: flex;
+  flex-direction: column;
+}
+
+.italicFont {
+  font-style: italic;
+}

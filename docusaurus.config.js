@@ -44,6 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/Michaeldremy/orthodocs/blob/main/',
+          sidebarCollapsed: true,
         },
         // blog: {
         //   showReadingTime: true,
@@ -61,7 +62,7 @@ const config = {
         //   onUntruncatedBlogPosts: 'warn',
         // },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/AudioPlayer.css'],
         },
       }),
     ],

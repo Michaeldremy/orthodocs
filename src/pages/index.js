@@ -21,7 +21,7 @@ function HomepageHeader() {
             className='button button--secondary button--lg'
             to='/docs/category/ignatius'
           >
-            Start with St. Ignatius
+            Start with Saint Ignatius
           </Link>
         </div>
       </div>

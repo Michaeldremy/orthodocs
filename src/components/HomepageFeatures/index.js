@@ -14,7 +14,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Founding church father writings',
+    title: 'Church father writings',
     Svg: require('@site/static/img/hp_church_father_writings.svg').default,
     description: (
       <>

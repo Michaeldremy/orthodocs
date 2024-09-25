@@ -1,0 +1,64 @@
+/* AudioPlayer.css */
+
+/* Styles for the download button */
+.rhap_additional-controls button {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  border: none;
+  padding: 7px 14px;
+  border-radius: var(--ifm-button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.6px;
+  font-weight: thin;
+}
+
+.rhap_additional-controls button:hover {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+/* Other AudioPlayer styles */
+.rhap_container {
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 0 3px 0 var(--ifm-color-emphasis-300);
+}
+
+.rhap_time,
+.rhap_current-time {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.rhap_progress-filled {
+  background-color: var(--ifm-color-primary);
+}
+
+.rhap_download-progress,
+.rhap_volume-bar {
+  background-color: var(--ifm-color-emphasis-200);
+  padding-right: 95px;
+}
+
+.rhap_main-controls-button,
+.rhap_volume-button {
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Dark mode styles for the button */
+html[data-theme='dark'] .rhap_additional-controls button {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+html[data-theme='dark'] .rhap_additional-controls button:hover {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* You don't need separate dark mode styles as the CSS variables will automatically adjust */
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .rhap_volume-controls {
+    display: none;
+  }
+}
