@@ -17,9 +17,9 @@ Wherefore, as children of light and truth, flee from division and wicked doctrin
 
 Keep yourselves from those evil plants which Jesus Christ does not tend, because they are not the planting of the Father. Not that I have found any division among you, but exceeding purity. For as many as are of God and of Jesus Christ are also with the bishop. And as many as shall, in the exercise of repentance, return into the unity of the Church, these, too, shall belong to God, that they may live according to Jesus Christ. Do not err, my brethren. If any man follows him that makes a schism in the Church, he shall not inherit the kingdom of God. If any one walks according to a strange opinion, he agrees not with the passion [of Christ.].
 
-### Chapter IV: Have But One Eu### Charist, Etc.
+### Chapter IV: Have But One Eucharist, Etc.
 
-Take ye heed, then, to have but one Eu### Charist. For there is one flesh of our Lord Jesus Christ, and one cup to [show forth] the unity of His blood; one altar; as there is one bishop, along with the presbytery and deacons, my fellow-servants: that so, whatsoever ye do, ye may do it according to [the will of] God.
+Take ye heed, then, to have but one Eucharist. For there is one flesh of our Lord Jesus Christ, and one cup to [show forth] the unity of His blood; one altar; as there is one bishop, along with the presbytery and deacons, my fellow-servants: that so, whatsoever ye do, ye may do it according to [the will of] God.
 
 ### Chapter V: Pray for Me.
 
