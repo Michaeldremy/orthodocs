@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 import AudioPlayerPackage, { RHAP_UI } from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 import '../../css/AudioPlayer.css'
 
 const AudioPlayer = ({ audioURL, audioFileDownloadName }) => {
   const [isMobileScreenWidth, setIsMobileScreenWidth] = useState(false)
+  let audioSrc = useBaseUrl(audioURL)
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -23,7 +25,7 @@ const AudioPlayer = ({ audioURL, audioFileDownloadName }) => {
 
   const handleDownloadAudioFile = async () => {
     try {
-      const response = await fetch(audioURL)
+      const response = await fetch(audioSrc)
       const blob = await response.blob()
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement('a')
@@ -50,7 +52,7 @@ const AudioPlayer = ({ audioURL, audioFileDownloadName }) => {
 
   return (
     <AudioPlayerPackage
-      src={audioURL}
+      src={audioSrc}
       customProgressBarSection={[
         RHAP_UI.CURRENT_TIME,
         RHAP_UI.PROGRESS_BAR,
