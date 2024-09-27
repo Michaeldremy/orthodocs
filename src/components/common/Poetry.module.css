@@ -1,0 +1,17 @@
+.poetry {
+  font-family: inherit;
+  font-size: inherit;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 1em 1.8em; /* Adjust top and bottom padding */
+  font-style: italic;
+  color: var(--ifm-color-emphasis-800);
+  overflow-x: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Remove default margins from child elements */
+.poetry > * {
+  margin: 0;
+}
