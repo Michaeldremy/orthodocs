@@ -9,10 +9,10 @@ const ImageCopyright = ({
   hrefText,
 }) => {
   return (
-    <div className={clsx('flex italicFont', styles.textSize)}>
-      <p>{copyrightText}&nbsp;</p>
+    <div className={clsx('flex italicFont')}>
+      <p className={styles.paragraphTextSize}>{copyrightText}&nbsp;</p>
       {includeImageLink && (
-        <a href={href} target='_blank'>
+        <a href={href} target='_blank' className={styles.aTagTextSize}>
           {hrefText ? hrefText : 'Image Source'}
         </a>
       )}

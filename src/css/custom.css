@@ -29,6 +29,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+h1 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+p {
+  font-size: 20px;
+  /* font-family: sans-serif; */
+}
+
 .flex {
   display: flex;
 }
@@ -46,4 +63,8 @@
 
 .italicFont {
   font-style: italic;
+}
+
+.boldFont {
+  font-weight: 500;
 }

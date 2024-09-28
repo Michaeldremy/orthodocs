@@ -29,7 +29,7 @@ const TooltipForMarkdown = ({
       onMouseEnter={showTooltip}
       onMouseLeave={hideTooltip}
     >
-      {children}
+      <span className={styles.tooltipText}>{children}</span>
       <FaLightbulb className={styles.lightbulb} />
       {isVisible && (
         <div
