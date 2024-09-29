@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Set a branch name to trigger deployment
+      - main
 
 permissions:
   contents: write
@@ -12,6 +12,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
