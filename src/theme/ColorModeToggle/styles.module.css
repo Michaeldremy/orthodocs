@@ -27,3 +27,10 @@
 .toggleButtonDisabled {
   cursor: not-allowed;
 }
+
+
+@media screen and (max-width: 500px) {
+  .toggle {
+    margin-right: 5px !important;
+  }
+}

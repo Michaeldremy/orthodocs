@@ -156,9 +156,14 @@ html[data-theme='dark'] .signInContainer:hover {
     font-size: 14px;
     margin: 0 8px;
   }
+}
 
-  .avatarContainer {
-    width: 22px;
-    height: 22px;
+@media screen and (max-width: 500px) {
+  .loginButtonContainer {
+    padding-right: 6px;
+  }
+
+  .loginButtonContainer p {
+    display: none;
   }
 }
