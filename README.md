@@ -16,6 +16,16 @@ $ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+### Environment Setup
+
+This project uses environment variables to manage sensitive information. Follow these steps to set up your environment:
+
+1. Copy the `.env.example` file and rename it to `.env`
+2. Replace the placeholder values in `.env` with your actual Firebase configuration
+3. Ensure that `.env` is listed in your `.gitignore` file to prevent committing sensitive information
+
+Note: Never commit your actual `.env` file to the repository.
+
 ### Build
 
 ```
