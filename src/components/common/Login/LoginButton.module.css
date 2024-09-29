@@ -1,0 +1,140 @@
+/* src/components/LoginButton.module.css */
+.loginButtonContainer {
+  position: relative;
+}
+
+.userContainer {
+  cursor: pointer;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarContainer {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initials {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.loginButtonContainer p {
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0 8px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  right: 0;
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.signOutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  padding: 10px 6px;
+}
+
+.signOutContainer svg {
+  height: 18px;
+  width: 18px;
+  fill: var(--ifm-color-emphasis-800);
+}
+
+.signOutButton {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.signOutContainer:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.signInContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ifm-color-primary);
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.signInButton {
+  font-weight: 600;
+  color: rgb(235,237,240);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.signInContainer:hover {
+  background-color: var(--ifm-color-primary-light);
+  cursor: pointer;
+}
+
+/* Dark mode specific overrides */
+html[data-theme='dark'] .avatarContainer {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark'] .initials {
+  color: var(--ifm-color-emphasis-900);
+}
+
+html[data-theme='dark'] .dropdown {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+html[data-theme='dark'] .signOutContainer:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+html[data-theme='dark'] .signInContainer {
+  background-color: rgb(235,237,240);
+}
+
+html[data-theme='dark'] .signInButton {
+  color: black;
+}
+
+html[data-theme='dark'] .signInContainer:hover {
+  background-color: var(--ifm-color-emphasis-600);
+}
