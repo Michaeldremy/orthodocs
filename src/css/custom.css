@@ -68,3 +68,8 @@ p {
 .boldFont {
   font-weight: 500;
 }
+
+/* Hide the LoginButton in the SideBar when it gets introduced below 1000px*/
+.navbar-sidebar .navbar-sidebar__brand .loginButtonContainer_src-components-common-Login-LoginButton-module {
+  display: none;
+}

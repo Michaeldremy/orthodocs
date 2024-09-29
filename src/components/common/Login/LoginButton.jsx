@@ -90,7 +90,7 @@ function LoginButton() {
         </div>
       ) : (
         <div className={styles.signInContainer} onClick={handleSignIn}>
-          <button className={styles.signInButton}>Sign In</button>
+          <button className={styles.signInButton}>Login</button>
         </div>
       )}
     </div>

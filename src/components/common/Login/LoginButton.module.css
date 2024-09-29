@@ -54,7 +54,7 @@
   background-color: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -91,13 +91,13 @@
   justify-content: center;
   align-items: center;
   background-color: var(--ifm-color-primary);
-  padding: 8px 20px;
+  padding: 8px 22px;
   border-radius: 4px;
 }
 
 .signInButton {
   font-weight: 600;
-  color: rgb(235,237,240);
+  color: rgb(235, 237, 240);
   background: none;
   border: none;
   cursor: pointer;
@@ -120,7 +120,7 @@ html[data-theme='dark'] .initials {
 }
 
 html[data-theme='dark'] .dropdown {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 html[data-theme='dark'] .signOutContainer:hover {
@@ -128,7 +128,7 @@ html[data-theme='dark'] .signOutContainer:hover {
 }
 
 html[data-theme='dark'] .signInContainer {
-  background-color: rgb(235,237,240);
+  background-color: rgb(235, 237, 240);
 }
 
 html[data-theme='dark'] .signInButton {
@@ -137,4 +137,28 @@ html[data-theme='dark'] .signInButton {
 
 html[data-theme='dark'] .signInContainer:hover {
   background-color: var(--ifm-color-emphasis-600);
+}
+
+/* Smaller Screens */
+
+@media screen and (max-width: 425px) {
+  .signInContainer {
+    background-color: var(--ifm-color-primary);
+    padding: 6px 12px;
+  }
+
+  .signInButton {
+    font-size: 14px;
+  }
+
+  .loginButtonContainer p {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 8px;
+  }
+
+  .avatarContainer {
+    width: 22px;
+    height: 22px;
+  }
 }
