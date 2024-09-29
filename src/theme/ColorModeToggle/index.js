@@ -1,14 +1,14 @@
-import React from 'react';
-import clsx from 'clsx';
-import useIsBrowser from '@docusaurus/useIsBrowser';
-import {translate} from '@docusaurus/Translate';
-import IconLightMode from '@theme/Icon/LightMode';
-import IconDarkMode from '@theme/Icon/DarkMode';
-import styles from './styles.module.css';
+import React from 'react'
+import clsx from 'clsx'
+import useIsBrowser from '@docusaurus/useIsBrowser'
+import { translate } from '@docusaurus/Translate'
+import IconLightMode from '@theme/Icon/LightMode'
+import IconDarkMode from '@theme/Icon/DarkMode'
+import styles from './styles.module.css'
 import LoginButton from '@site/src/components/common/Login/LoginButton'
 
-function ColorModeToggle({className, buttonClassName, value, onChange}) {
-  const isBrowser = useIsBrowser();
+function ColorModeToggle({ className, buttonClassName, value, onChange }) {
+  const isBrowser = useIsBrowser()
   const title = translate(
     {
       message: 'Switch between dark and light mode (currently {mode})',
@@ -28,37 +28,36 @@ function ColorModeToggle({className, buttonClassName, value, onChange}) {
               id: 'theme.colorToggle.ariaLabel.mode.light',
               description: 'The name for the light color mode',
             }),
-    },
-  );
+    }
+  )
 
   return (
     <>
-    <div className={clsx(styles.toggle, className)}>
-      <button
-        className={clsx(
-          'clean-btn',
-          styles.toggleButton,
-          !isBrowser && styles.toggleButtonDisabled,
-          buttonClassName
-        )}
-        type='button'
-        onClick={() => onChange(value === 'dark' ? 'light' : 'dark')}
-        disabled={!isBrowser}
-        title={title}
-        aria-label={title}
-        aria-live='polite'
-      >
-        <IconLightMode
-          className={clsx(styles.toggleIcon, styles.lightToggleIcon)}
-        />
-        <IconDarkMode
-          className={clsx(styles.toggleIcon, styles.darkToggleIcon)}
-        />
-      </button>
-
-    </div>
+      <div className={clsx(styles.toggle, className)}>
+        <button
+          className={clsx(
+            'clean-btn',
+            styles.toggleButton,
+            !isBrowser && styles.toggleButtonDisabled,
+            buttonClassName
+          )}
+          type='button'
+          onClick={() => onChange(value === 'dark' ? 'light' : 'dark')}
+          disabled={!isBrowser}
+          title={title}
+          aria-label={title}
+          aria-live='polite'
+        >
+          <IconLightMode
+            className={clsx(styles.toggleIcon, styles.lightToggleIcon)}
+          />
+          <IconDarkMode
+            className={clsx(styles.toggleIcon, styles.darkToggleIcon)}
+          />
+        </button>
+      </div>
       <LoginButton />
     </>
   )
 }
-export default React.memo(ColorModeToggle);
+export default React.memo(ColorModeToggle)
